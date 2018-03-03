@@ -13,23 +13,110 @@
                 background-repeat:no-repeat;
                 background-size:cover;
             }
+             ul{
+                 list-style:none;
+                 margin:0;
+                 padding:0;
+                 overflow:hidden;
+                 background:purple;
+                 Opacity:0.6;
+             }
+             li{
+                 float:left;
+             }
+             li a, .dropbtn{
+                 display:inline-block;
+                 color:white;
+                 text-align:center;
+                 padding:25px 16px;
+                 text-decoration:none;
+                 width:150px;
+                 font-size:20px;
+                 font-family:Verdana;
+                 transition:0.9s;
+             }
+             li a hover, .dropdown:hover .dropbtn{
+                 background:lightblue;
+                 color:black;
+             }
+             li .dropdown{
+                 display:inline-block;
+             }
+             .dropdown-content{
+                 display:none;
+                 position:absolute;
+                 background:purple;
+                 z-index:1;
+             }
+             .dropdown-content a{
+                 color:white;
+                 text-decoration:none;
+                 display:block;
+             }
+             .dropdown-content a:hover{
+                 background:yellow;
+                 color:black;
+                 border-radius:0 20px 0 0;
+             }
+             .dropdown:hover .dropdown-content {
+                 display:block;
+             }
+             .button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
         </style>
         
     </head>
 
             <div align="center">
             <body>
+                 <ul>
+                     <li> <a href ="homepage.html"> Home</a></li>
+                     <li> <a href ="cv_page1.html"> Curriculum Vitae</a></li>
+                     <li class ="dropdown">
+                     <a href ="javascript:void(0)" class ="dropbtn"> Interests</a>
+                     <div class ="dropdown-content">
+                         <a href ="Interests/sports.html"> Sport</a>
+                         <a href ="Interests/travel.html"> Travel</a>
+                         <a href ="Interests/cloud.html"> Cloud Computing</a>
+                         </div>
+                         </li>
+                        <li> <a href ="ebusiness/Ebus1.php"> eBus</a></li>
+                        <li class ="dropdown">
+                        <a href ="javascript:void(0)" class ="dropbtn"> About Cloud</a>
+                     <div class ="dropdown-content">
+                         <a href ="AboutCloud/SaaS.html"> Software as a Service</a>
+                         <a href ="AboutCloud/PaaS.html"> Platform as a Service</a>
+                         <a href ="AboutCloud/IaaS.html"> Infrastructure as a Service</a>
+                          <a href ="AboutCloud/CaaS.html"> Communication as a Service</a>
+                         </div>
+                         </li>
+                 </ul>
+                <br/>
                 <h1 class="mainheading">Work Experience</h1>
-                
+                <br/>
+                <img src="http://sapphiresigns.com/wp-content/uploads/2014/09/easonsexterior.jpg" height="150" width="300"/>
                 <h2>Eason</h2>
                 <p>As part of my transition year programme in school, I worked in Eason in the Parkway shopping centre for a week. 
                 During my time, I assisted customers, stocked shelves, managed deliveries, and priced goods. 
                 It was my first time working in retail and it was an enjoyable experience.</p>
+                <br/>
                 <h2>Donal Morrissey & Co.</h2>
                 <p>During my second term of work experience in the transition year programme, I worked in Donal Morrissey & Co. Accountancy.
                 I have always been interested in accountancy and I enjoyed the week overall.
                 I recorded accounts on Microsoft Excel, managed files, and recorded payments in appropriate accounts.
                 </p>
+                <br/>
+                <img src="https://cdn.agriland.ie/uploads/2017/03/DSC_0717-1024x678.jpg" height="150" width="300"/>
                 <h2>Farming</h2>
                 <p>Throughout my life, I have worked on a farm in Limerick.
                 My father is a farmed and I help out frequently.
@@ -37,7 +124,7 @@
                 Farming is very enjoyable and it is a great way appreciating the country side!</p>
                 
                 
-                <a href="homepage.html" class="btn btn-success">Home</a>
+                 <a href="homepage.html" class="button">Home</a>
                 </div>
                 </body>
         </html>

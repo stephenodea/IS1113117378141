@@ -1,18 +1,99 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <style>
+             ul{
+                 list-style:none;
+                 margin:0;
+                 padding:0;
+                 overflow:hidden;
+                 background:purple;
+                 Opacity:0.6;
+             }
+             li{
+                 float:left;
+             }
+             li a, .dropbtn{
+                 display:inline-block;
+                 color:white;
+                 text-align:center;
+                 padding:25px 16px;
+                 text-decoration:none;
+                 width:150px;
+                 font-size:20px;
+                 font-family:Verdana;
+                 transition:0.9s;
+             }
+             li a hover, .dropdown:hover .dropbtn{
+                 background:lightblue;
+                 color:black;
+             }
+             li .dropdown{
+                 display:inline-block;
+             }
+             .dropdown-content{
+                 display:none;
+                 position:absolute;
+                 background:purple;
+                 z-index:1;
+             }
+             .dropdown-content a{
+                 color:white;
+                 text-decoration:none;
+                 display:block;
+             }
+             .dropdown-content a:hover{
+                 background:yellow;
+                 color:black;
+                 border-radius:0 20px 0 0;
+             }
+             .dropdown:hover .dropdown-content {
+                 display:block;
+             }
+             .button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+        </style>
         <title>Education</title>
         <link rel="stylesheet" href="mystylesheet.css" type="text/css" />
-        <style>
-
-
-</style>
+            
         
     </head>
 
         
             <body>
+                                             <ul>
+                     <li> <a href ="homepage.html"> Home</a></li>
+                     <li> <a href ="cv_page1.html"> Curriculum Vitae</a></li>
+                     <li class ="dropdown">
+                     <a href ="javascript:void(0)" class ="dropbtn"> Interests</a>
+                     <div class ="dropdown-content">
+                         <a href ="Interests/sports.html"> Sport</a>
+                         <a href ="Interests/travel.html"> Travel</a>
+                         <a href ="Interests/cloud.html"> Cloud Computing</a>
+                         </div>
+                         </li>
+                        <li> <a href ="ebusiness/Ebus1.php"> eBus</a></li>
+                        <li class ="dropdown">
+                        <a href ="javascript:void(0)" class ="dropbtn"> About Cloud</a>
+                     <div class ="dropdown-content">
+                         <a href ="AboutCloud/SaaS.html"> Software as a Service</a>
+                         <a href ="AboutCloud/PaaS.html"> Platform as a Service</a>
+                         <a href ="AboutCloud/IaaS.html"> Infrastructure as a Service</a>
+                          <a href ="AboutCloud/CaaS.html"> Communication as a Service</a>
+                         </div>
+                         </li>
+                 </ul>
+                <br/>
                 <div align="center">
                 <h1 class="mainheading">Educational Details</h1>
                 
@@ -60,7 +141,7 @@
                     <tr><td>French</td><td>H2</td></tr>
                    </table>
                    <br/>
-                <a href="cv_page3.html" class="btn btn-dark">Next</a>
+                <a href="cv_page3.html" class="button">Work Experience</a>
                 </div>
                 </body>
                 </html>
