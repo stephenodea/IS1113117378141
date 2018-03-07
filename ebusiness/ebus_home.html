@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-     <head>
+    <head>
          <style>
               ul{
                  list-style:none;
@@ -50,28 +50,75 @@
              .dropdown:hover .dropdown-content {
                  display:block;
              }
+*{
+  margin: 0;
+}
+
+@keyframes slider {
+  0%{
+    left: 0;
+  }
+  20%{
+    left: 0;
+  }
+  25%{
+    left: -100%;
+  }
+  45%{
+    left: -100%;
+  }
+  50%{
+    left: -200%;
+  }
+  70%{
+    left: -200%;
+  }
+  75%{
+    left: -300%;
+  }
+  95%{
+    left: -300%;
+  }
+  100%{
+    left: -400%;
+  }
+}
+
+#slider{
+  overflow: hidden;
+}
+
+#slider figure img{
+  width: 20%;
+  float: left;
+}
+
+#slider figure{
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
          </style>
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <link rel="stylesheet" href="mystylesheet.css" type="text/css" />
-        
-         <title>117378141</title>
-         </head>
-         <body>
-                             <ul>
+    </head>
+    <body>
+        <ul>
                      <li> <a href ="homepage.html"> Home</a></li>
-                     <li> <a href ="cv_page1.html"> Curriculum Vitae</a></li>
-                     <li><a href ="Interests/sports.html"> Interests</a></li>
-                        <li> <a href ="ebusiness/ebus_home.html"> eBus</a></li>
-                        <li class ="dropdown">
-                     <li><a href ="AboutCloud/CaaS.html"> About Cloud</a></li>
+                     <li> <a href ="Ebus1.php"> Shop</a></li>
+                    <li> <a href ="ebusiness/Ebus1.php"> About Cloud Ltd</a></li>
                  </ul>
-               <div id="slider">
+                 <div align="center">
+                     <img src="https://tbncdn.freelogodesign.org/d80063b8-8907-40a2-8877-a743dc88b49c.png?1520439932370">
+                 </div>
+                 <br/>
+                  <div id="slider">
 
       <figure>
 
-        <img src="http://www.iltechs.tk/images/Wallpaper/12.jpg">
+        <img src="http://www.desktopas.com/files/2013/06/Gmail-1989x1020.png">
 
-        <img src="http://www.iltechs.tk/images/Wallpaper/14.jpg">
+        <img src="https://cdn.vox-cdn.com/thumbor/RjXf6Eiszt0DnmM8t3qGiPcT2S8=/0x40:1100x659/1600x900/cdn.vox-cdn.com/assets/1066973/amazon-web-services-logo.png">
 
         <img src="http://www.iltechs.tk/images/Wallpaper/16.jpg">
 
@@ -82,7 +129,5 @@
       </figure>
 
     </div>
-             
-              </body>
-              </html>
-
+    </body>
+</html>

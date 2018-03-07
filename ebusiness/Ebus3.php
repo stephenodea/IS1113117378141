@@ -3,22 +3,31 @@ session_start();
 ?>
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>RECEIPT</title>
-         
-    </head>
-    <body id="receipt">
-        <h4>RECEIPT</h4>
-                 <?php
-                 $_SESSION["user_email"] = $_POST["user_email"];
-              $_SESSION["user_name"] = $_POST["user_name"];
-              ?>
-              
+    
+		<head>
+        <title>ebus1</title>
+        <link rel="stylesheet" href="mystylesheet.css" type="text/css" />
+     
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Receipt --> 
+	<div class="ebuscontainer">
+		<section id="main">
+			<h2>Receipt:</h2>
+			
+             
         <?php
         // Echo session variables that were set on previous page
-        echo "Total Price is " . $_SESSION["total"] . "</br>";
-        echo "Name: " . $_SESSION["user_name"] . "</br>";
-        echo "Email: " . $_SESSION["user_email"] . "</br>";
+        echo "Name: " . $_POST["name"] . ". <br>";
+        echo "Email: " . $_POST["email"] . "<br>";
+        echo "Total is &euro;" . $_SESSION["total"] . ". <br>";
         ?>
+        <p>Thank you for your purchase.</p>
+        
+        
+        </section>
+        
+        
+    </div>
+	
     </body>
 </html>
