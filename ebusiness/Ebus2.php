@@ -3,88 +3,125 @@
 session_start();
 ?>
 
-<!--DOCTYPE html-->
+<!DOCTYPE html>
 <html>
     <head>
         
-        <!-- title -->
+        
+         <style>
+         
+          .bottom_img{
+        position: fixed;
+        width: 560px;
+    }
+         
+      body{
+    background:url('http://raslras.com/images/features_bg.jpeg') no-repeat;
+    background-size: cover;
+    font-family: arial;
+    color: white;
+}
+   
+    .button_proceed{
+  height:38px;
+  background:#0f847c;
+  border:0;
+  padding-left: 20px;
+  padding-right:20px;
+  color:#ffffff;
+  cursor: pointer;
+}
+    .Validate{
+border: 2px solid #f44336;
+    background-color: white; 
+    color: blue;
+    padding: 10px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+ .hover:hover{
+     background-color: #0000FF;
+    color: white; 
+ }
+</style>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         <title> Enter Details</title>
         
-        <!--jQuery-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         
+        <!--jQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </head>
     
     <body align="center">
         
-        <!-- subheading -->
         <h4>Please enter your payment details.</h4>
-        
+
             <br />
             
-            <!-- Layout of the page and proceed to Ebus3 when all actions are completed -->
-            <form method= "POST" action= "Ebus3.php">
+            <form align="center" method = "POST" action = "Ebus3.php">
+ <label for="Name">Name</label>
+<input type="text" id="user_name" placeholder="Name" maxlength="30">
+<br><br>
+<label for="Email"> Email Address</label>
+<input type="text" id="user_email" placeholder="Email" maxlength="50">
+                 
+  
+  <br/><br/>
+  
                 
-                <!-- name textbox -->
-                <label for="name"> Name</label>
+                <label for="user_pin">PIN</label>
                 
-                <input type="text" id="name" name="name" maxlength="25">
+                <input type="password" id="user_pin" placeholder="Card Pin" maxlength="4">
+                    
+                <button class ="button_proceed" type="Submit" id="btnPurchase" disabled> 
+                    Proceed with Purchase 
+                </button>
                 
-                <br />
-                <br />
-                
-                <!-- email textbox -->
-                <label for "Email"> Email Address</label>
-                
-                <input type="text" id="Email" name="Email" maxlength="30">
-                
-                <br />
-                <br />
-                
-                <!-- pin textbox -->
-                <label for="user_pin"> PIN</label>
-                
-                <input type="password" id="user_pin" name="Total" placeholder="Card Pin" maxlength="4">
-                
-                <!-- button to proceed -->
-                <button style="font-size:15px" type="submit" id="btnPurchase" disabled>
-                     Proceed with Purchase </button>
+               
+ 
+
+
                 
             </form>
             
             <br />
             
-            <!-- button to go back to ebus1 and button to validate purchase -->
-            <a href="Ebus1.html"><button style="font-size:15px; background-color:silver;">Back</button></a>
-            
-            <button style="font-size:15px;" onClick="validateDetails()"> Validate </button>
-            <script type="text/javascript" src="Ebus2_validator.js"></script>
-
-            <?php
-        // Set session variables
+            <button  class ="Validate hover" onClick="validateDetails()"> Validate </button>
         
-        $_SESSION["Subtotal"] = $_POST["Subtotal"];
+        <script type="text/javascript" src="ebus2_validator.js"></script>
         
-        $_SESSION["Discount"] = $_POST["Discount"];
+        <br/>
         
-        $_SESSION["Vat"] = $_POST["Vat"];
-        
-        $_SESSION["Total"] = $_POST["Total"];
-        
-        $_SESSION["name"] = $_POST["name"];
-        
-        $_SESSION["Email"] = $_POST["Email"];
-        
-        ?>
-        
-        <br />
-        <br />
-        
-        <!-- footer -->
-        <div id = "Footer">
-              <p>Copyright 2018 &COPY; All Rights Reserved. Design By Brian O Connell 117376663</p>
-          </div>
-          
+         <img align="center" class="bottom_img" src="http://www.globallinkic.org/images/interface/bodyFooter_img1.png"/>
+    <?php
+    // Set session variables
+    $_SESSION["subtotal"] = $_POST["subtotal"];
+     $_SESSION["discount"] = $_POST["discount"];
+      $_SESSION["vat"] = $_POST["vat"];
+       $_SESSION["total"] = $_POST["total"];
+       ?>
     </body>
+    
+    
     
 </html>

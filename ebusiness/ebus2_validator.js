@@ -1,38 +1,36 @@
 /* global $ */
 
-// function to check the textboxes info
 function validateDetails(){
     
     var pin;
+    var name;
+    var email;
+pin = document.getElementById("user_pin").value;
+    name = document.GetElementById("user_name").value;
+    email = document.getElementById("user_email").value;
     
-    pin = document.getElementById("user_pin").value;
-    var Email = document.getElementById("Email").value;
-    var name = document.getElementById("name").value;
-    
-    // if statement for error handling 
-    if (name==""){
-        alert("Please enter your name");
-    }
-   else if (Email==""){
-        alert("Please enter an email");
-   }
-    else if (pin==""){
+    if (pin == ""){
         alert("Please enter your PIN");
-        }
-    else if (String(pin).length<4){
+    }
+    else if (String(pin).length < 4){
         alert("Please make sure your PIN is accurate");
-        }
+    }
+     else if (name==""){
+        alert("Please enter your name!");
+     }
+    else if (email ==""){
+        alert("Please enter your Email!");
+    }    
     else{
         enablebtnPurchase();
-        }
+    }
+    
 }
 
-//function thta enables the proceed button
 function enablebtnPurchase(){
-     $('#btnPurchase').prop('disabled',false);
+    $('#btnPurchase').prop('disabled', false);
 }
 
-//function that disables the proceed button
-function disablebtnPurchase(){
-     $('#btnPurchase').prop('disabled',true);
+function disablebtnPurchase() {
+    $('#btnPurchase').prop('disabled', true);
 }
