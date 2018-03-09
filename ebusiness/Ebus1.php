@@ -3,7 +3,7 @@
     
     <head>
         <title>Select Product</title>
-        
+        <!--Linking to jquery and javascript-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script type="text/javascript" src="cost_calc.js"></script>
         </script>
@@ -60,7 +60,9 @@
         <h4>Our Products</h4>
         <img src="https://tbncdn.freelogodesign.org/d80063b8-8907-40a2-8877-a743dc88b49c.png?1520439932370">
         
+        <!--Linking to next page-->
         <form method="POST" action="Ebus2.php">
+            <!--Radiobuttons for different products-->
             <label for="salesforce">
                 <input type="radio" id="salesforce" name="product" checked onClick="disablebtnProceed()"/>
                 Salesforce @ &euro;100
@@ -88,7 +90,7 @@
             </label>
             
             <br/> </br>
-            
+            <!--Displaying price and details of product-->
              <label for="subtotal">
                 Subtotal &euro;
                 <input type="text" id="subtotal" value="0.00" name="subtotal" readonly/>

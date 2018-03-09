@@ -14,16 +14,14 @@ session_start()
     color: black;
              }
         </style>
-        <!-- title -->
         <title>Receipt</title>
     </head>
     
  <body align="center">
-          <!-- subheading -->
           <h3>Thank you for your order!</h3>
  
           <?php
-          //Echo Session variables that were set on previous page
+          //Echo Session variables that contain order
            echo "Name: " . $_POST["name"] . "<br /> <br />";
        
            echo "Email: " . $_POST["email"] . "<br /> <br />";
@@ -45,7 +43,7 @@ session_start()
            
            <br />
            
-           <!-- button to homepage -->
+           <!-- button taking you to homepage -->
         <a href="../homepage.html"> <img src="https://image.flaticon.com/icons/svg/23/23665.svg" height="75" width="75"></a>
         
         <br />

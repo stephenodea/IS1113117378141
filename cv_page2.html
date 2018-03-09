@@ -2,6 +2,9 @@
 <html>
     <head>
         <style>
+             table, td, th { 
+                 border: 1px solid gray 
+                 }
              ul{
                  list-style:none;
                  margin:0;
@@ -71,6 +74,7 @@
 
         
             <body>
+                <div align="center">
                                              <ul>
                      <li> <a href ="homepage.html"> Home</a></li>
                      <li> <a href ="cv_page1.html"> Curriculum Vitae</a></li>
@@ -82,7 +86,7 @@
                          <a href ="Interests/cloud.html"> Cloud Computing</a>
                          </div>
                          </li>
-                        <li> <a href ="ebusiness/Ebus1.php"> eBus</a></li>
+                        <li> <a href ="ebusiness/ebus_home.html"> eBus</a></li>
                         <li class ="dropdown">
                         <a href ="javascript:void(0)" class ="dropbtn"> About Cloud</a>
                      <div class ="dropdown-content">
@@ -94,14 +98,14 @@
                          </li>
                  </ul>
                 <br/>
-                <div align="center">
                 <h1 class="mainheading">Educational Details</h1>
                 
                 <p><strong>College:</strong> UCC</p>
                 <p><strong>Course:</strong> Business Information Systems</p>
                 <p><strong>Year:</strong> 2017-2021</p>
+                <!--Adding hyperlink to image-->
                 <a href="https://www.ucc.ie/">
-                <img src="https://uccexpress.ie/wp-content/uploads/2016/11/the-kingsley-hotel-near-ucc.jpg" width="300" height="175"/>
+                <img src="https://uccexpress.ie/wp-content/uploads/2016/11/the-kingsley-hotel-near-ucc.jpg" width="300" height="175" alt="UCC"/>
                 </a>
                 <br/>
                 <br/>
@@ -110,11 +114,11 @@
                 <p><strong>Years:</strong>2011-2017</p>
                 <p><strong>Favourite Subject(s):</strong>Economics & science.</p>`
                 <a href="http://johnthebaptistcs.ie/">
-                <img src="https://s3-eu-west-1.amazonaws.com/client-johnthebaptistcs/wp-content/uploads/2016/05/school-photo.jpg" width="300" height="175"/>
+                <img src="https://s3-eu-west-1.amazonaws.com/client-johnthebaptistcs/wp-content/uploads/2016/05/school-photo.jpg" width="300" height="175" alt="jtb"/>
                 </a>
+                <!--Using table to display JC and LC results-->
+                 <h3>Junior Cert Results</h3>
                 <table>
-                    <h3>Junior Cert Results</h3>
-                    <table border="1"
                     <tr><td><strong>Subject</strong></td><td><strong>Grade</strong></td></tr>
                     <tr><td>English</td><td>B</td></tr>
                     <tr><td>Irish</td><td>C</td></tr>
@@ -128,9 +132,8 @@
                     <tr><td>CSPE</td><td>B</td></tr>
                 </table>
                 <br/>
+                 <h3>Leaving Cert Results</h3>
                 <table>
-                    <h3>Leaving Cert Results</h3>
-                    <table border="1"
                     <tr><td><strong>Subject</strong></td><td><strong>Grade</strong></td></tr>
                     <tr><td>English</td><td>H3</td></tr>
                     <tr><td>Irish</td><td>O3</td></tr>
@@ -141,6 +144,7 @@
                     <tr><td>French</td><td>H2</td></tr>
                    </table>
                    <br/>
+                <!--Button to proceed to next page-->
                 <a href="cv_page3.html" class="button">Work Experience</a>
                 </div>
                 </body>

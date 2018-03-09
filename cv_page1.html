@@ -3,7 +3,12 @@
 <head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 <link rel="stylesheet" href="mystylesheet.css" type="text/css" />
+<!--Styling profile card and navigation menu and button-->
 <style>
+ div{
+    text-align: center;
+}
+
  ul{
                  list-style:none;
                  margin:0;
@@ -52,6 +57,7 @@
              .dropdown:hover .dropdown-content {
                  display:block;
              }
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
@@ -100,6 +106,7 @@ button:hover, a:hover {
     cursor: pointer;
 }
 </style>
+<title>Personnal Details</title>
 </head>
 <body>
 <ul>
@@ -113,7 +120,7 @@ button:hover, a:hover {
                          <a href ="Interests/cloud.html"> Cloud Computing</a>
                          </div>
                          </li>
-                        <li> <a href ="ebusiness/Ebus1.php"> eBus</a></li>
+                        <li> <a href ="ebusiness/ebus_home.html"> eBus</a></li>
                         <li class ="dropdown">
                         <a href ="javascript:void(0)" class ="dropbtn"> About Cloud</a>
                      <div class ="dropdown-content">
@@ -125,8 +132,10 @@ button:hover, a:hover {
                          </li>
                  </ul>
                         <br/>
+<!--Adding a heading to page-->
 <h2 style="text-align:center">Personnal Details</h2>
-<div align="center">
+<div>
+  <!--Making key details in bold text-->
   <p><strong>Name:</strong> Stephen Edward O'Dea</p>
   <p><strong>Address:</strong> Ballyphilip Kilteely County Limerick.</p>
   <p><strong>Date of Birth:</strong> 31/10/1998</p>
@@ -134,8 +143,9 @@ button:hover, a:hover {
   <p><strong>Phone Number:</strong>************</p>
 </div>
 <br/>
+<!--Inputting information and contact details to profile card--> 
 <div class="card">
-     <img src="https://www.iconexperience.com/_img/g_collection_png/standard/256x256/businessman.png" height="200" width="200"/>
+     <img src="https://www.iconexperience.com/_img/g_collection_png/standard/256x256/businessman.png" height="200" width="200" alt="man"/>
   <h1>Stephen O'Dea</h1>
   <p class="title">CEO & Founder, Cloud LTD</p>
   <p>University College Cork</p>
@@ -150,7 +160,8 @@ button:hover, a:hover {
  </a>
 </div>
 <br/>
-<div align="center">
+<div>
+<!--Button to take you to next page-->
 <a href="cv_page2.html" class="button">Educational Details</a>
 </div>
 </body>

@@ -2,19 +2,19 @@
 
 function validateDetails(){
     
-    // declaring my variables
+    // declaring necessary variables
     
     var pin;
     var name;
     var email;
     
-    // applying values to my variables
+    // adding values to variables
     
     pin = document.getElementById("user_pin").value;
      name = document.getElementById("user_name").value;
        email = document.getElementById("user_email").value;
     
-    // if statements to ensure correct data entered
+    // using if statements for validation
     
     if (pin==""){
         alert("Please enter your PIN");

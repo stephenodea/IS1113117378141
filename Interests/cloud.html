@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+     <!--Link to style sheet-->
      <link rel="stylesheet" href="int_pages.css" type="text/css"/>   
     <style>
         p{
@@ -12,11 +13,84 @@
                 background-repeat:no-repeat;
                 background-size:cover;
             }
+             ul{
+                 list-style:none;
+                 margin:0;
+                 padding:0;
+                 overflow:hidden;
+                 background:purple;
+                 Opacity:0.6;
+             }
+             li{
+                 float:left;
+             }
+             li a, .dropbtn{
+                 display:inline-block;
+                 color:white;
+                 text-align:center;
+                 padding:25px 16px;
+                 text-decoration:none;
+                 width:150px;
+                 font-size:20px;
+                 font-family:Verdana;
+                 transition:0.9s;
+             }
+             li a hover, .dropdown:hover .dropbtn{
+                 background:lightblue;
+                 color:black;
+             }
+             li .dropdown{
+                 display:inline-block;
+             }
+             .dropdown-content{
+                 display:none;
+                 position:absolute;
+                 background:purple;
+                 z-index:1;
+             }
+             .dropdown-content a{
+                 color:white;
+                 text-decoration:none;
+                 display:block;
+             }
+             .dropdown-content a:hover{
+                 background:yellow;
+                 color:black;
+                 border-radius:0 20px 0 0;
+             }
+             .dropdown:hover .dropdown-content {
+                 display:block;
+             }
         </style>
     </head>
+    <!--Centering page-->
     <div align="center">
     <body>
+         <ul>
+                     <li> <a href ="../homepage.html"> Home</a></li>
+                     <li> <a href ="../cv_page1.html"> Curriculum Vitae</a></li>
+                     <li class ="dropdown">
+                     <a href ="javascript:void(0)" class ="dropbtn"> Interests</a>
+                     <div class ="dropdown-content">
+                         <a href ="sports.html"> Sport</a>
+                         <a href ="travel.html"> Travel</a>
+                         <a href ="cloud.html"> Cloud Computing</a>
+                         </div>
+                         </li>
+                        <li> <a href ="../ebusiness/ebus_home.html"> eBus</a></li>
+                        <li class ="dropdown">
+                        <a href ="javascript:void(0)" class ="dropbtn"> About Cloud</a>
+                     <div class ="dropdown-content">
+                         <a href ="../AboutCloud/SaaS.html"> Software as a Service</a>
+                         <a href ="../AboutCloud/PaaS.html"> Platform as a Service</a>
+                         <a href ="../AboutCloud/IaaS.html"> Infrastructure as a Service</a>
+                          <a href ="../AboutCloud/CaaS.html"> Communication as a Service</a>
+                         </div>
+                         </li>
+                 </ul>
+        <br/>
         <h1>Cloud Computing</h1>
+        <!--Using paragraphs-->
         <p>Cloud computing is a topic I have always been interested in.
         It inspired me to set up my own business that sells cloud computing products.</p>
         <br/>

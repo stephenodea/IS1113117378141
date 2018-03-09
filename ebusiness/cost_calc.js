@@ -1,5 +1,6 @@
 /* global $ */
 
+/*Applying prices to goods*/
 function calcSub(){
     
     var argSubTotal;
@@ -20,6 +21,7 @@ function calcSub(){
     calcDisVatTotal(argSubTotal);
 }
 
+/*Calculating discount and vat and total price*/
 function calcDisVatTotal(parmSubTotal){
   var num1, num2, discount, vat, totalPrice;
   num1 = .05
@@ -32,6 +34,7 @@ function calcDisVatTotal(parmSubTotal){
 
 }
 
+/*Displaying all values*/
 function display(parm1,parm2,parm3,parm4){
   document.getElementById("subtotal").value = parm1;
   document.getElementById("discount").value = parm2;
@@ -42,10 +45,12 @@ function display(parm1,parm2,parm3,parm4){
 
     
 
+/*Button to proceed*/
 function enablebtnProceed(){
     $('#btnProceed').prop('disabled', false);
 }
 
+/*Button which will not proceed due to errors*/
 function disablebtnProceed() {
     $('#btnProceed').prop('disabled', true);
 }

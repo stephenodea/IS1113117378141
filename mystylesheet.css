@@ -1,16 +1,23 @@
+/*Adding background image to use for various pages of project*/
 body {
     background-image:url('http://www.psdgraphics.com/file/wooden-panels.jpg');
     background-size:cover;
     background-repeat:no-repeat;
 }
+/*Styling main headings*/
 h1{
                                   color: Red;
 			        			        text-align: center;
 			    }
+h2{
+  color:blue;
+  text-align: center;
+}
 *{
   margin: 0;
 }
 
+/*Styling slideshow*/
 @keyframes slider {
   0%{
     left: 0;

@@ -56,7 +56,7 @@ border: 2px solid #f44336;
  }
 </style>
         
-        <title> Enter Details</title>
+        <title> Customer Details</title>
         <!--jQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </head>
@@ -70,7 +70,7 @@ border: 2px solid #f44336;
             <form align="center" method = "POST" action = "Ebus3.php">
                 
                 
-                  <!--Labels for Customer Input-->
+                  <!--Labels for Customer details-->
    <label for="name"> Name</label>
   <input type="text" id="user_name" name="name"  placeholder="Name" maxlength="30">
 <br><br>
@@ -85,7 +85,7 @@ border: 2px solid #f44336;
                      PIN 
                 </label>
                 
-                  <!--max length of pin set to 4 characters-->
+                  <!--length of pin set to 4 characters-->
                 <input type="password" id="user_pin" placeholder="Card Pin" maxlength="4">
                     <br/></br>
                       <!--button to purchase product-->
@@ -110,7 +110,7 @@ border: 2px solid #f44336;
         
         <br/>
         <?php
-        // Set session variables
+        // Set session variables to be used in receipt
         
         $_SESSION["subtotal"] = $_POST["subtotal"];
         
